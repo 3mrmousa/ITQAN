@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    @apply min-h-screen bg-linear-to-r from-[#e6f6f2] via-[#9edfd3] to-[#e6f6f2];
+  }
+}
+
+@layer nav {
+  .nav-button {
+    @apply bg-black/1 text-black border border-[#63c7bb] rounded-2xl p-2 shadow-2xl transform duration-300 hover:bg-[#63c7bb] hover:scale-125 cursor-pointer;
+  }
+
+  .nav-a {
+    @apply text-black font-semibold hover:text-teal-900 duration-300;
+  }
+}
+
+@layer landingPage {
+  .primary-button {
+    @apply bg-teal-400 text-white font-semibold rounded-xl p-2 shadow-2xl transform duration-300 hover:bg-teal-200 hover:text-black hover:scale-125 cursor-pointer;
+  }
+
+  .secondary-button {
+    @apply bg-black/1 text-teal-600 border-teal-400 border-2 font-semibold rounded-xl p-2 shadow-2xl transform duration-300 hover:bg-teal-400 hover:text-black hover:scale-125 cursor-pointer;
+  }
+
+  .card {
+    @apply rounded-2xl p-6
+    shadow-2xl shadow-teal-600 hover:shadow-teal-300 duration-300
+    bg-linear-to-r from-teal-300 to-white;
+  }
+
+  .h3 {
+    @apply font-semibold text-2xl;
+  }
+
+  .h2 {
+    @apply text-4xl font-bold;
+  }
+}

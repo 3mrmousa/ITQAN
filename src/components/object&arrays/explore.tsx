@@ -62,7 +62,7 @@ export default function Carousel() {
       >
         {exploreItems.map((item, index) => (
           <div key={index} className="w-full shrink-0 flex justify-center">
-            <div className="max-w-xl bg-white/1 rounded-lg shadow-lg p-6 mb-10">
+            <div className="max-w-xl bg-white/1 rounded-lg shadow-lg shadow-teal-500 p-6 mb-10 cursor-pointer hover:scale-105 hover:shadow-teal-300 duration-300 ">
               <img
                 src={item.imgSrc}
                 alt={item.title}

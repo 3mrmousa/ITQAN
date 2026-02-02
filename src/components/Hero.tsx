@@ -151,10 +151,11 @@ function Hero() {
           </div>
         </section>
 
-        <section className="explore">
+        <section className="explore mb-20">
           <div className="explore-content flex flex-col items-center justify-center px-6 py-20 gap-6">
             <h2 className="h2">
-              استكشف أحدث <span className="text-teal-800">المسارات</span> التعليمية
+              استكشف أحدث <span className="text-teal-800">المسارات</span>{" "}
+              التعليمية
             </h2>
             <p className="text-md max-w-100 text-center">
               انضم إلى آلاف المتعلمين الذين بدأوا رحلتهم التعليمية معنا. اختر من
@@ -163,10 +164,102 @@ function Hero() {
           </div>
           <Carousel />
         </section>
+
+        <section className="cta bg-white">
+          <div className="cta-content flex flex-col items-center justify-center px-6 py-10 gap-6">
+            <div
+              className="rounded-2xl py-6 px-15
+    shadow-2xl shadow-teal-600 bg-linear-to-r from-teal-500 to-emerald-500 flex flex-col gap-10 items-center justify-center"
+            >
+              <h2 className="h2 text-white">
+                ابدأ رحاتك نحو <span className="text-teal-800">الإتقان</span>{" "}
+                اليوم!
+              </h2>
+              <p className="text-lg max-w-100 text-center text-white">
+                لا تنتظر أكثر! انضم إلى مجتمع إتقان وابدأ في بناء مستقبلك المهني
+                من خلال تعلم مهارات جديدة وتطوير قدراتك.
+              </p>
+              <a
+                href="#"
+                className="bg-[#0e2334] text-white font-bold px-6 py-4 border-0 shadow-lg rounded-xl hover:scale-105 duration-300 "
+              >
+                سجل الآن وابدأ التعلم
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <footer className="bg-[#0e2334] p-4">
+          <div className="footer-content text-white grid grid-cols-1 lg:grid-cols-5 px-6 py-10 gap-6">
+            <div className="col-span-2">
+              <h3 className="h3 text-white mb-4">إتقان</h3>
+              <p className="text-md max-w-100">
+                منصة تعليمية عربية تهدف إلى تقديم محتوى تعليمي في
+                مجالات البرمجة وتطوير الويب.
+              </p>
+            </div>
+            <div>
+              <h3 className="h3 text-white mb-4">روابط سريعة</h3>
+              <ul className="flex flex-col gap-2">
+                <li>
+                  <a href="#" className="text-sm hover:text-teal-400">
+                    الرئيسية
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="text-sm hover:text-teal-400">
+                    الدورات
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="text-sm hover:text-teal-400">
+                    من نحن
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="text-sm hover:text-teal-400">
+                    تواصل معنا
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="h3 text-white mb-4">المساعدة</h3>
+              <ul className="flex flex-col gap-2">
+                <li>
+                  <a href="#" className="text-sm hover:text-teal-400">
+                    الأسئلة الشائعة
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="text-sm hover:text-teal-400">
+                    دعم العملاء
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="h3 text-white mb-4">سياستنا</h3>
+              <ul className="flex flex-col gap-2">
+                <li>
+                  <a href="#" className="text-sm hover:text-teal-400">
+                    سياسة الخصوصية
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="text-sm hover:text-teal-400">
+                    شروط الاستخدام
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <hr className="p-2"/>
+          <p className="text-white">منصة إتقان جميع الحقوق محفوظة.</p>
+        </footer>
       </div>
     </>
   );
 }
-
 
 export default Hero;

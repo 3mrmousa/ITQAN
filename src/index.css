@@ -1,8 +1,10 @@
 @import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Changa:wght@200..800&display=swap");
 
 @layer base {
   body {
-    @apply min-h-screen bg-linear-to-r from-[#e6f6f2] via-[#9edfd3] to-[#e6f6f2];
+    font-family: "Changa";
+    @apply min-h-screen;
   }
 }
 
@@ -16,9 +18,9 @@
   }
 }
 
-@layer landingPage {
+@layer general {
   .primary-button {
-    @apply bg-teal-400 text-white font-semibold rounded-xl p-2 shadow-2xl transform duration-300 hover:bg-teal-200 hover:text-black hover:scale-125 cursor-pointer;
+    @apply bg-teal-400 text-white font-semibold rounded-xl p-2 shadow-2xl transform duration-300 hover:bg-teal-200 hover:text-black hover:scale-105 cursor-pointer;
   }
 
   .secondary-button {

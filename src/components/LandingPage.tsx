@@ -11,10 +11,13 @@ import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons/faArrowRight";
 import Carousel from "./object&arrays/explore";
 
-function Hero() {
+function LandingPage() {
   return (
     <>
-      <div dir="rtl">
+      <div
+        dir="rtl"
+        className="bg-linear-to-r from-[#e6f6f2] via-[#9edfd3] to-[#e6f6f2]"
+      >
         <section className="hero flex flex-col items-center justify-center min-h-screen px-6">
           <div className="hero-content w-full flex flex-col lg:flex-row items-center justify-evenly">
             <div className="image">
@@ -188,78 +191,9 @@ function Hero() {
             </div>
           </div>
         </section>
-
-        <footer className="bg-[#0e2334] p-4">
-          <div className="footer-content text-white grid grid-cols-1 lg:grid-cols-5 px-6 py-10 gap-6">
-            <div className="col-span-2">
-              <h3 className="h3 text-white mb-4">إتقان</h3>
-              <p className="text-md max-w-100">
-                منصة تعليمية عربية تهدف إلى تقديم محتوى تعليمي في
-                مجالات البرمجة وتطوير الويب.
-              </p>
-            </div>
-            <div>
-              <h3 className="h3 text-white mb-4">روابط سريعة</h3>
-              <ul className="flex flex-col gap-2">
-                <li>
-                  <a href="#" className="text-sm hover:text-teal-400">
-                    الرئيسية
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-sm hover:text-teal-400">
-                    الدورات
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-sm hover:text-teal-400">
-                    من نحن
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-sm hover:text-teal-400">
-                    تواصل معنا
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="h3 text-white mb-4">المساعدة</h3>
-              <ul className="flex flex-col gap-2">
-                <li>
-                  <a href="#" className="text-sm hover:text-teal-400">
-                    الأسئلة الشائعة
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-sm hover:text-teal-400">
-                    دعم العملاء
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="h3 text-white mb-4">سياستنا</h3>
-              <ul className="flex flex-col gap-2">
-                <li>
-                  <a href="#" className="text-sm hover:text-teal-400">
-                    سياسة الخصوصية
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-sm hover:text-teal-400">
-                    شروط الاستخدام
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <hr className="p-2"/>
-          <p className="text-white">منصة إتقان جميع الحقوق محفوظة.</p>
-        </footer>
       </div>
     </>
   );
 }
 
-export default Hero;
+export default LandingPage;
